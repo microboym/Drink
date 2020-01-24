@@ -8,7 +8,6 @@
 
 import Cocoa
 import SwiftUI
-import AVFoundation
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -29,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Create the status item
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
-        self.statusBarItem.button?.image = NSImage(named: "StatusBarIcon.png")
+        self.statusBarItem.button?.image = NSImage(named: "glass")
         self.statusBarItem.button?.action = #selector(togglePopover)
     }
 
