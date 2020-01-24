@@ -75,12 +75,14 @@ struct ContentView: View {
                     Text("喝水提醒")
                         .font(.headline)
                         .fixedSize()
+                    Spacer()
                     MenuButton("􀍟") {
                         Button("Quit Drink") {
                             NSApplication.shared.terminate(self)
                         }
                     }
                     .frame(width: 16)
+                    .padding(.leading)
                     .menuButtonStyle(BorderlessButtonMenuButtonStyle())
                 }
                 HStack {
